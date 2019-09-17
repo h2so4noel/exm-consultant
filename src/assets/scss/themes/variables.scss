@@ -1,0 +1,212 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+// $primary:       #00a6ed !default;
+$primary:       #F6653C !default;
+$primary-light: #F69E78 !default;
+$secondary:     $gray-700 !default;
+$success:       #22bb33 !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$grey:          $gray-500 !default;
+$dark:          $gray-900 !default;
+$black-lighten: #222 !default;
+$gray-darken:   darken($gray-800, 2%) !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "grey":       $grey,
+  "dark":       $dark,
+  "black":      $black,
+  "blue":       $blue,
+  "yellow":     $yellow,
+  "black-lighten":  $black-lighten,
+  "gray-darken": $gray-darken
+), $theme-colors);
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+), $spacers);
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg:                   $gray-darken !default;
+$body-color:                white !default;
+
+// Card
+$card-border-radius:        2px !default;
+
+
+// Button Styles
+
+$btn-primary:             linear-gradient(180deg, $primary 0%, #D0021B 100%) !default;
+$btn-secondary:           linear-gradient(0deg, #000000 0%, $secondary 100%) !default;
+$btn-danger:              linear-gradient(0deg, darken($danger, 10%) 0%, $danger 100%) !default;
+$btn-success:             linear-gradient(0deg, darken($success, 10%) 0%, $success 100%) !default;
+
+$input-btn-border-width:      1px !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $primary !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-montserrat:      'Montserrat', 'Prompt', Helvetica, Arial, sans-serif !default;
+$font-family-roboto:          Roboto, 'Prompt', Helvetica, Arial, sans-serif !default;
+$font-family-avenir:          'Avenir', Helvetica, Arial, sans-serif !default;
+$font-family-base:            $font-family-montserrat !default;
+
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-mobile:            $font-size-sm * 0.8 !default;
+
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
+
+
+// Forms
+
+$input-border-color:          $gray-300 !default;
+
+$input-placeholder-color:     $gray-500 !default;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+$alert-border-radius:               0 !default;
+
+//Table
+$table-dark-border-color:   $secondary;
