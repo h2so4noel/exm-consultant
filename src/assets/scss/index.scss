@@ -2,16 +2,8 @@
 @import "themes/variables.scss";
 @import "themes/breakpoints.scss";
 @import "themes/helper.scss";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap/scss/_functions";
 @import "node_modules/bootstrap/scss/_variables";
 @import "node_modules/bootstrap/scss/_mixins";
-
-// NOTE: Bootstrap overriding
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-// End Bootstrap overriding

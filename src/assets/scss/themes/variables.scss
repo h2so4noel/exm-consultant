@@ -63,9 +63,9 @@ $colors: map-merge((
 ), $colors);
 
 // $primary:       #00a6ed !default;
-$primary:       #F6653C !default;
-$primary-light: #F69E78 !default;
-$secondary:     $gray-700 !default;
+$primary:       #35477d !default;
+$primary-light: #6c5b7b !default;
+$secondary:     #f67280 !default;
 $success:       #22bb33 !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -125,30 +125,17 @@ $border-radius-sm:            .2rem !default;
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg:                   $gray-darken !default;
-$body-color:                white !default;
-
-// Card
-$card-border-radius:        2px !default;
-
-
-// Button Styles
-
-$btn-primary:             linear-gradient(180deg, $primary 0%, #D0021B 100%) !default;
-$btn-secondary:           linear-gradient(0deg, #000000 0%, $secondary 100%) !default;
-$btn-danger:              linear-gradient(0deg, darken($danger, 10%) 0%, $danger 100%) !default;
-$btn-success:             linear-gradient(0deg, darken($success, 10%) 0%, $success 100%) !default;
-
-$input-btn-border-width:      1px !default;
+// $body-bg:                   $gray-darken !default;
+// $body-color:                white !default;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                $primary !default;
-$link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
-$link-hover-decoration:     underline !default;
+// $link-color:                $primary !default;
+// $link-decoration:           none !default;
+// $link-hover-color:          darken($link-color, 15%) !default;
+// $link-hover-decoration:     underline !default;
 
 // Fonts
 //
