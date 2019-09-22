@@ -1,7 +1,7 @@
 <template>
   <div class="root-chrome-container">
       <Navbar />
-      <transition>
+      <transition appear appear-active-class="fade-enter-active">
         <router-view />
       </transition>
       <Footer />
@@ -21,4 +21,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.root-chrome-container {
+  overflow: hidden;
+}
+.fade-enter-active {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 </style>

@@ -7,9 +7,10 @@
 <style lang="scss">
 @import './assets/scss/index.scss';
 #app {
-  font-family: Avenir, 'Helvetica', Arial, sans-serif;
+  font-family: $font-family-avenir;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+
 }
 </style>

@@ -12,9 +12,10 @@
       <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-item nav-link" href="#">About Us</a>
+          <a class="nav-item nav-link" href="#">Services</a>
+          <a class="nav-item nav-link" href="#">Projects</a>
+          <a class="nav-item nav-link" href="#">Contacts</a>
         </div>
       </div>
     </nav>
@@ -30,10 +31,10 @@ export default {
 @import '@/assets/scss/themes/variables.scss';
 
 .img-container {
-  height: 50px;
+  height: 30px;
   img {
-    filter: grayscale(100%);
-    max-height: 50px;
+    // filter: grayscale(100%);
+    max-height: 30px;
   }
 }
 .navbar {
