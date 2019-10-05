@@ -109,7 +109,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(10px);
+  filter: blur(5px);
 }
 .intro-container {
   z-index: 0;

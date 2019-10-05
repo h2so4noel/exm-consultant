@@ -1,4 +1,6 @@
 module.exports = {
-  publicPath: '/exm-consultant/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/exm-consultant/'
+    : '/',
   runtimeCompiler: true,
 };
