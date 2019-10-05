@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '<exm-consultant>',
+  publicPath: '/exm-consultant/',
   runtimeCompiler: true,
 };
