@@ -63,8 +63,8 @@ $colors: map-merge((
 ), $colors);
 
 // $primary:       #00a6ed !default;
-$primary:       #35477d !default;
-$primary-light: #6c5b7b !default;
+$primary:       #23374d !default;
+$primary-light: #1089ff !default;
 $secondary:     $red !default;
 $success:       #22bb33 !default;
 $info:          $cyan !default;
@@ -78,7 +78,7 @@ $gray-darken:   darken($gray-800, 2%) !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $primary,
+  "primary":    $primary-light,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
